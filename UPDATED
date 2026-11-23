@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fully Mature · 2027 Prayer & Fasting</title>
+<style>
+:root{--bg:#fff;--fg:#0a0a0a;--mute:#6b6b6b;--line:#e4e4e4;--card:#f5f5f5;--inv-bg:#0a0a0a;--inv-fg:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--fg:#f5f5f5;--mute:#9a9a9a;--line:#2a2a2a;--card:#161616;--inv-bg:#f5f5f5;--inv-fg:#0a0a0a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a0a0a;--fg:#f5f5f5;--mute:#9a9a9a;--line:#2a2a2a;--card:#161616;--inv-bg:#f5f5f5;--inv-fg:#0a0a0a;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.65 "Helvetica Neue",Helvetica,Arial,sans-serif}
+h1,h2,h3,h4,.b{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;margin:0}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header{display:flex;align-items:center;gap:12px;padding:22px 0;border-bottom:1px solid var(--line)}
+header .logo{display:block;width:46px;aspect-ratio:240/224;background:currentColor;-webkit-mask:url(data:image/png;base64,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) center/contain no-repeat;mask:url(data:image/png;base64,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) center/contain no-repeat}
+header .b{font-size:15px;letter-spacing:.14em;text-transform:uppercase}
+.hero{padding:56px 0 40px}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.hero h1{font-size:clamp(40px,10vw,76px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;margin:14px 0 8px}
+.tag{color:var(--mute);margin:0 0 32px}
+.banner{background:var(--card);border-left:4px solid var(--fg);padding:14px 18px;margin:0 0 28px;font-size:15px}
+blockquote{margin:0 0 6px;font-weight:700;font-size:clamp(22px,5vw,32px);line-height:1.25;letter-spacing:-.01em}
+.ref{font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-bottom:28px}
+.prompt{font-size:19px;margin:0 0 32px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+button{font:700 14px "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border:2px solid var(--fg);background:transparent;color:var(--fg);padding:12px 20px;border-radius:0}
+button.solid,button:hover{background:var(--inv-bg);color:var(--inv-fg)}
+button:disabled{opacity:.3;cursor:default}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,6vw,44px);text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;margin-bottom:20px}
+.verse{background:var(--inv-bg);color:var(--inv-fg);padding:22px 24px;margin:24px 0}
+.verse p{margin:0}
+.weeks{display:grid;gap:12px;margin:22px 0}
+.weeks div{border:1px solid var(--line);padding:14px 18px}
+.weeks .b{display:block;text-transform:uppercase;font-size:14px;letter-spacing:.08em}
+.note{background:var(--card);padding:18px 20px;font-size:16px}
+.wk{margin-bottom:44px}
+.wk h3{font-size:26px;text-transform:uppercase;margin-bottom:4px}
+.wk .intro{color:var(--mute);font-size:16px;margin:8px 0 18px}
+.day{display:block;width:100%;text-align:left;text-transform:none;letter-spacing:0;font-weight:400;font-size:16px;border:1px solid var(--line);padding:16px 18px;margin-bottom:10px;line-height:1.5;color:var(--fg);background:transparent}
+.day:hover{background:var(--card);color:var(--fg)}
+.day.on{border:2px solid var(--fg)}
+.day .d{display:block;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.day .q{font-weight:700}
+.day .r{color:var(--mute);font-size:14px}
+.day .p{display:block;margin-top:6px;color:var(--mute);font-size:15px}
+details{border-top:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:16px 0;font-size:18px}
+.ym{list-style:none;margin:0 0 18px;padding:0}
+.ym li{display:flex;gap:14px;padding:7px 8px;font-size:15px;border-bottom:1px solid var(--line)}
+.ym li b{min-width:28px}
+.ym li.on{background:var(--card);font-weight:700}
+.read{border:2px solid var(--fg);padding:16px 18px;margin:0 0 32px}
+.read .rd{font-size:20px;margin-top:4px}
+footer{padding:36px 0 60px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<span class="logo" role="img" aria-label="Logo"></span>
+<span class="b">Fully Mature · 2027</span>
+</header>
+
+<main>
+<div class="hero" id="today"></div>
+
+<section id="message">
+<div class="eyebrow">A message from our pastor</div>
+<h2 style="margin-top:10px">21 Days of Prayer &amp; Fasting</h2>
+<p>Our theme as we step into 2027 is Fully Mature. The ultimate aim of our walk with Jesus is not to simply attend church or feel good about the things we’re doing, but to be continually maturing in Christ – both personally and as a church community. Our theme verse is Colossians 1:28-29:</p>
+<div class="verse"><p>He is the one we proclaim, admonishing and teaching everyone with all wisdom, so that we may present everyone fully mature in Christ. To this end I strenuously contend with all the energy Christ so powerfully works in me.</p></div>
+<p>It takes work, but it’s always worth it. This is why we start the year with an intentional time of prayer &amp; fasting. Below are prompts for each day of the week to get you started. Each day, take a moment to slow down and pray through the scripture and allow it to take root in you. We also suggest reading the daily laid-out reading plan so that you can start a sustainable habit going forward.</p>
+<div class="weeks">
+<div><span class="b">Week 1 (January 4–10) – Mature Faith</span>Walk with Jesus, center life around Him</div>
+<div><span class="b">Week 2 (January 11–17) – Mature People</span>God-honoring lives, marriages, families and friendships</div>
+<div><span class="b">Week 3 (January 18–24) – Mature Church</span>A Church that is growing deeper &amp; wider</div>
+</div>
+<div class="note"><span class="b">Note:</span> Each day has a short scripture and prompt. In addition to the prompt, we encourage you to take a few minutes to read along with others through the reading plan so that you grow in your walk with Jesus as you read scripture. You’ll find the reading plan after the 21 Days of Prayer &amp; Fasting section.</div>
+</section>
+
+<section id="plan">
+<div class="eyebrow">21 days of prayer &amp; fasting</div>
+<h2 style="margin:10px 0 28px">January 4–24</h2>
+<div id="weeks"></div>
+</section>
+
+<section id="soap">
+<div class="eyebrow">How to read</div>
+<h2 style="margin:10px 0 20px">S.O.A.P. Method</h2>
+<p>SOAP is a simple method that helps you to daily read scripture and apply it to your life. Change may not happen overnight, but over time, you will see the results in every area of your life as you follow Jesus!</p>
+<div class="weeks">
+<div><span class="b">S: Scripture</span>Find a verse or two that stick out &amp; write them down. Writing it down helps to solidify a word, idea or truth into your heart.</div>
+<div><span class="b">O: Observation</span>What do you notice? What stands out to you? What is the truth or message the author is trying to get into you, the reader?</div>
+<div><span class="b">A: Application</span>In reflection, write a practical way you can put this into practice. Perhaps there’s a truth you want to continue to reflect on – or even a step you can take today to live it out.</div>
+<div><span class="b">P: Prayer</span>Take a moment to pray. Consider writing a 1-2 sentence prayer in efforts to see God’s word take root in your life!</div>
+</div>
+</section>
+
+<section id="year">
+<div class="verse"><p>“Your word is a lamp to my feet, and a light for my path.”</p><p class="b" style="margin-top:8px;font-size:14px;letter-spacing:.1em;text-transform:uppercase">Psalm 119:105</p></div>
+<div class="eyebrow">The year-long reading plan</div>
+<h2 style="margin:10px 0 20px">Keep going – one day at a time!</h2>
+<div id="months"></div>
+</section>
+</main>
+<footer>Fully Mature · A time of prayer &amp; fasting · January 2027</footer>
+</div>
+
+<script>
+/* ===== EDIT YOUR CONTENT HERE ===== */
+var YEAR = 2027, MONTH = 0; // January
+var WEEKS = [
+{ title:`Mature Faith`, tag:`Walk with Jesus, center life around Him`,
+  intro:`Having a mature faith does not mean you’re perfect – it means you’re maturing toward the things of God. This is why Paul says “I strenuously contend…” There’s a process! This week is all about taking steps to mature in our walk with the Lord!`,
+  days:[
+  [4,`That we may present everyone fully mature in Christ.`,`Col 1:28–29`,`Where do you most need to grow spiritually this year? Write down 2-3 areas.`],
+  [5,`Whoever wants to be my disciple must deny themselves, take up their cross daily and follow me.`,`Luke 9:23`,`What might you need to surrender in order to follow Jesus more fully today?`],
+  [6,`Remain in me, as I also remain in you.`,`John 15:4–5`,`Maturity is about staying connected to Jesus. Take a moment simply to be with Him, thank Him for who he is, listen for His invitation to trust Him this week.`],
+  [7,`Solid food is for the mature…`,`Hebrews 5:12–14`,`Contrast the areas of your walk with Jesus that you’re strong in with the areas that are dependent on someone else. What would it look like to take a step forward?`],
+  [8,`Do not merely listen to the word… Do what it says.`,`James 1:22`,`What has God already told you that you need to put into practice?`],
+  [9,`Let us throw off the weights that hinder and run the race marked out for us with perseverance…`,`Hebrews 12:1–2`,`What habit, distraction or weight is hindering your spiritual growth and maturity? Write it down and replace it with a habit, behavior or truth that is better.`],
+  [10,`He who began a good work in you will carry it on to completion.`,`Philippians 1:6`,`Thank God for how far He has brought you. Trust Him with the growth that is still unfinished.`]]},
+{ title:`Mature People`, tag:`God-honoring lives, marriages, families and friendships`,
+  intro:`Relationships are the best and most difficult part of life. No dad, mom, brother, sister, boss or friend is perfect. But, we can grow in Christlikeness, thus growing in how we treat and see others. For this week, think about the relationships God has you in and how you can become like Jesus in them.`,
+  days:[
+  [11,`In humility value others above yourselves.`,`Philippians 2:3–4`,`Maturity is seen in people who know how to honor and serve others. Who can you intentionally notice, honor or serve today?`],
+  [12,`Be quick to listen, slow to speak and slow to become angry.`,`James 1:19`,`Where have you spoken too quickly or responded in anger to a spouse, child, friend or coworker? Seek an opportunity to make things right, both with them and with God.`],
+  [13,`Speaking the truth in love, we will grow…`,`Ephesians 4:15; Proverbs 27:6`,`Proverbs 27:6 says that wounds from a friend can be trusted… Even the best relationships come with friction, and sometimes it’s necessary. What’s a difficult-but-necessary conversation you can start today that you’ll be glad you had in the long run?`],
+  [14,`Clothe yourselves with compassion, kindness, humility, gentleness and patience.`,`Colossians 3:12`,`Which of these qualities is most needed in your closest relationship today? Express it intentionally today.`],
+  [15,`Forgive others as the Lord forgave you.`,`Colossians 3:13`,`Is there a friend or family member you are still holding an offense against? Where have you been passive-aggressive toward a coworker? Are you being unforgiving, forgetting that you’ve been forgiven? Seek healing today.`],
+  [16,`If your brother or sister has something against you… first go and be reconciled.`,`Matthew 5:23–24`,`Maturity takes responsibility. Is there an apology you need to make or a relationship you should begin repairing?`],
+  [17,`Bear other’s burdens in love.`,`Eph 4:2 / Gal 6:2`,`Who in your life is carrying a heavy load? How can you be a good friend, brother, boss?`]]},
+{ title:`Mature Church`, tag:`A Church that is growing deeper & wider`,
+  intro:`For this last week of our prayer and fasting, we’re seeking God to lead us as a church community. There are things God has called us into as a church that require maturing people with a shared vision.`,
+  days:[
+  [18,`They devoted themselves to the apostles’ teaching, to fellowship, to the breaking of bread and to prayer.`,`Acts 2:42`,`Which of these four practices needs renewed priority in your life?`],
+  [19,`Lord, teach us to pray.`,`Luke 11:1`,`Read the Lord’s Prayer in Luke 11. Take some time to pray for our church. Pray for the lost, pray for our leaders, pray for the growth and maturity of those who know Jesus. Finally, pray that God’s will would be done at RLC and in our community, as it is in heaven.`],
+  [20,`You are a chosen generation, a royal priesthood, an holy nation`,`1 Peter 2:9`,`God has called each of us to minister one to another as “priests,” what we call “The Priesthood of all believers.” How might God be leading you to minister by serving for the sake of His Kingdom?`],
+  [21,`Let the message of Christ dwell among you richly.`,`Colossians 3:16`,`What voices are shaping your walk with the Lord? Scripture? Your phone? Friends? Take a few moments to meditate on a verse of scripture and let it take root in your heart today.`],
+  [22,`God loves a cheerful giver.`,`2 Corinthians 9:6–15`,`Read 2 Corinthians 9:6–15. Growing in maturity includes growing in generosity. How might God be inviting you to live open-handed with your resources, time &amp; gifts this year? What might a step forward in stewardship &amp; generosity look like for you and your family?`],
+  [23,`Let us consider how we may spur one another on toward love and good deeds.`,`Hebrews 10:24–25`,`Who can you encourage toward Jesus today? Send a text, make a call or invite someone to church!`],
+  [24,`To Him be glory in the church and in Christ Jesus throughout all generations.`,`Ephesians 3:20–21`,`God is building His church, and he’s inviting us to be a part! What does a maturing church look like this year, and how might you lead the way this year?`]]}
+];
+var PLAN=[
+['January',`
+1 – Proverbs 1; 1 John 1
+2 – Proverbs 2; 1 John 2
+3 – Proverbs 3; 1 John 3
+4 – Proverbs 4; 1 John 4
+5 – Proverbs 5; 2 John & 3 John
+6 – Proverbs 6; Romans 1
+7 – Proverbs 7; Romans 2
+8 – Proverbs 8; Romans 3
+9 – Proverbs 9; Romans 4
+10 – Proverbs 10; Romans 5
+11 – Proverbs 11; Romans 6
+12 – Proverbs 12; Romans 7
+13 – Proverbs 13; Romans 8
+14 – Proverbs 14; Romans 9
+15 – Proverbs 15; Romans 10
+16 – Proverbs 16; Romans 11
+17 – Proverbs 17; Romans 12
+18 – Proverbs 18; Romans 13
+19 – Proverbs 19; Romans 14
+20 – Proverbs 20; Romans 15
+21 – Proverbs 21; Romans 16
+22 – Proverbs 22; Galatians 1
+23 – Proverbs 23; Galatians 2
+24 – Proverbs 24; Galatians 3
+25 – Proverbs 25; Galatians 4
+26 – Proverbs 26; Galatians 5 & 6
+27 – Proverbs 27; Ephesians 1
+28 – Proverbs 28; Ephesians 2
+29 – Proverbs 29; Ephesians 3
+30 – Proverbs 30; Ephesians 4
+31 – Proverbs 31; Ephesians 5 & 6`],
+['February',`
+1 – Genesis 1-3; Philippians 1
+2 – Genesis 4-5; Philippians 2
+3 – Genesis 6-8; Philippians 3
+4 – Genesis 9; Philippians 4
+5 – Genesis 11; Colossians 1
+6 – Genesis 12; Colossians 2
+7 – Genesis 13-14; Colossians 3
+8 – Genesis 15; Colossians 4
+9 – Genesis 16-17; 1 Cor 1
+10 – Genesis 18-19; 1 Cor 2
+11 – Genesis 21-22; 1 Cor 3
+12 – Genesis 24; 1 Cor 4
+13 – Genesis 25; 1 Cor 5
+14 – Genesis 26-28; 1 Cor 6
+15 – Genesis 37-38; 1 Cor 7
+16 – Genesis 39-40; 1 Cor 8
+17 – Genesis 41; 1 Cor 9
+18 – Genesis 42-43; 1 Cor 10
+19 – Genesis 44-45; 1 Cor 11
+20 – Genesis 47-48; 1 Cor 11
+21 – Exodus 1-2; 1 Cor 12
+22 – Exodus 3-4; 1 Cor 13
+23 – Exodus 5-7; 1 Cor 14
+24 – Exodus 8-9; 1 Cor 15
+25 – Exodus 10-11; 1 Cor 16
+26 – Exodus 12-14; Philemon
+27 – Exodus 16-17; Psalm 23
+28 – Exodus 19-20; Psalm 91`],
+['March',`
+1 – Hebrews 1; 2 Cor 1
+2 – Hebrews 2; 2 Cor 2
+3 – Hebrews 3; 2 Cor 3
+4 – Hebrews 4; 2 Cor 4
+5 – Hebrews 5; 2 Cor 5
+6 – Hebrews 6; 2 Cor 6
+7 – Hebrews 7; 2 Cor 7
+8 – Hebrews 8; 2 Cor 8
+9 – Hebrews 9; 2 Cor 9
+10 – Hebrews 10; 2 Cor 10
+11 – Hebrews 11; 2 Cor 11
+12 – Hebrews 12; 2 Cor 12
+13 – Hebrews 13; 2 Cor 13
+14 – James 1; Proverbs 1-2
+15 – James 2; Proverbs 3-4
+16 – James 3; Proverbs 4-5
+17 – James 4; Proverbs 5-6
+18 – James 5; Proverbs 7-8
+19 – John 1-2; Proverbs 9-10
+20 – John 3-4; Proverbs 11-12
+21 – John 5-6; Proverbs 13-14
+22 – John 7-8; Proverbs 15-16
+23 – John 9-10; Proverbs 17-18
+24 – John 11-12; Proverbs 19-20
+25 – John 13-14; Proverbs 21-22
+26 – John 15-16; Proverbs 23-24
+27 – John 17-18; Proverbs 25-26
+28 – John 19-21; Proverbs 27-28
+29 – 1 Thess 1-4; Proverbs 29-31
+30 – 1 Thess 5; 2 Thess 1
+31 – 2 Thess 2-3`],
+['April',`
+1 – Nehemiah 1-2; 1 Timothy 1
+2 – Nehemiah 3-4; 1 Timothy 2
+3 – Nehemiah 5-6; 1 Timothy 3
+4 – 1 Timothy 4-6; Colossians 1
+5 – 2 Timothy 1-2; Colossians 2
+6 – 2 Timothy 3-4; Colossians 3-4
+7 – Daniel 1-3; Psalm 91
+8 – Daniel 4-6; Proverbs 10
+9 – Matthew 1-3; Galatians 1
+10 – Matthew 4-5; Galatians 2
+11 – Matthew 6-8; Galatians 3
+12 – Matthew 9-10; Galatians 4
+13 – Matthew 11-12; Galatians 5
+14 – Matthew 13-14; Galatians 6
+15 – Matthew 15-17; Php 1
+16 – Matthew 18-20; Php 2
+17 – Matthew 21-22; Php 3
+18 – Matthew 23-25; Php 4
+19 – Matthew 26-28; Psalm 23
+20 – Mark 1-2; Ephesians 1
+21 – Mark 3-4; Ephesians 2
+22 – Mark 5-6; Ephesians 3
+23 – Mark 7-8; Ephesians 4
+24 – Mark 9-10; Ephesians 5
+25 – Mark 11-12; Ephesians 6
+26 – Mark 13-14; James 1
+27 – Mark 15-16; James 2
+28 – Romans 1-5; James 3
+29 – Romans 6-10; James 4
+30 – Romans 11-16; James 5`],
+['May',`
+1 – Psalm 1; Luke 1-2
+2 – Psalm 8; Luke 3-4
+3 – Psalm 15; Luke 5-6
+4 – Psalm 16; Luke 7-8
+5 – Psalm 19; Luke 9-10
+6 – Psalm 23; Luke 11-12
+7 – Psalm 25; Luke 13-14
+8 – Psalm 27; Luke 15-16
+9 – Psalm 29; Luke 17-18
+10 – Psalm 32; Luke 19-20
+11 – Psalm 33; Luke 21-22
+12 – Psalm 34; Luke 23-24
+13 – Psalm 37; James 1
+14 – Psalm 67; James 2
+15 – James 3-5; Psalm 90
+16 – 1 Peter 1-5
+17 – 2 Peter 1-3; John 1
+18 – John 2-4; Psalm 23
+19 – John 5-6; Psalm 1
+20 – John 7-8; Psalm 46
+21 – John 9-11: Psalm 73
+22 – John 12-14; Psalm 139
+23 – John 15-18
+24 – John 19-21
+25 – 1 John 1-5
+26 – Psalm 117 & 119; 2 & 3 John
+27 – Psalm 131; Romans 5
+28 – Psalm 139; Romans 8
+29 – Psalm 145; Romans 12
+30 – Psalm 147; Hebrews 11
+31 – Psalm 148; 1 Timothy 4`],
+['June',`
+1 – Ruth 1-2; 1 Timothy 1
+2 – Ruth 3-4; 1 Timothy 2
+3 – Esther 1-2; 1 Timothy 3
+4 – Esther 3-4; 1 Timothy 4
+5 – Esther 5-6; 1 Timothy 5
+6 – Esther 7-8; 1 Timothy 6
+7 – Esther 9-10; 2 Timothy 1
+8 – Daniel 1-2; 2 Timothy 2
+9 – Daniel 3-4; 2 Timothy 3
+10 – Daniel 5-6; 2 Timothy 4
+11 – 1 Samuel 1-2; Romans 1
+12 – 1 Samuel 3-4; Romans 2
+13 – 1 Samuel 5-6; Romans 3
+14 – 1 Samuel 7-8; Romans 4
+15 – 1 Samuel 9-10; Romans 5
+16 – 1 Samuel 11-12; Romans 6
+17 – 1 Samuel 13-14; Romans 7
+18 – 1 Samuel 15-16; Romans 8
+19 – 1 Samuel 17-18; Romans 9
+20 – 1 Samuel 19-20; Romans 10
+21 – 1 Samuel 21-22; Romans 11
+22 – 1 Samuel 23-24; Romans 12
+23 – 1 Samuel 25-27; Romans 13
+24 – 1 Samuel 28-31; Romans 14
+25 – 2 Samuel 1-3; Romans 15
+26 – 2 Samuel 4-7; Romans 16
+27 – 2 Samuel 8-11; Prov 1
+28 – 2 Samuel 12-14; Prov 2
+29 – 2 Samuel 15-18; Prov 3
+30 – 2 Samuel 19-22; Prov 4
+31 – 2 Samuel 23-24; Prov 5`],
+['July',`
+1 – Isaiah 1; Titus 1-3
+2 – Isaiah 5; Psalm 115-116; Jude
+3 – Isaiah 7; Philemon1
+4 – 2 Kings 15-16; Hos 1; Heb 1
+5 – Hos 2-5; Heb 2
+6 – Hosea 6-9; Hebrews 3
+7 – Hosea 10-12; Ps 73; Heb 4
+8 – Hosea 13-14; Ps 100; Heb 5
+9 – Micah 1-4; Heb 6
+10 – Micah 5-7; Hebrews 7
+11 – Isaiah 29; Hebrews 8
+12 – Isaiah 31; Hebrews 9
+13 – Proverbs 13; Hebrews 10
+14 – Proverbs 14; Hebrews 11
+15 – Proverbs 15; Hebrews 12
+16 – Proverbs 16; Hebrews 13
+17 – Proverbs 17; James 1
+18 – Proverbs 18; James 2
+19 – 2 Kings 17; Psalm 46; James 3
+20 – Prov 20; James 4
+21 – 2 Kings 18-19; James 5
+22 – Psalm 76; 1 Peter 1
+23 – 2 Kings 20; Psalm 75; 1 Peter 2
+24 – Isaiah 40; 1 Peter 3
+25 – Isaiah 43-44; 1 Peter 4
+26 – Isaiah 46; 1 Peter 5
+27 – Isaiah 49; Psalm 92; 2 Peter 1
+28 – Isaiah 52; 2 Peter 2
+29 – Isaiah 53-54; Ps 103; 2 Peter 3
+30 – Isaiah 55-57; John 1
+31 – Psalm 107; John 2`],
+['August',`
+1 – Galatians 1-2
+2 – Galatians 3-4
+3 – Galatians 5-6
+4 – Ephesians 1-2
+5 – Ephesians 3-4
+6 – Ephesians 5-6
+7 – Philippians 1-2
+8 – Philippians 3-4
+9 – Colossians 1-2
+10 – Colossians 3-4
+11 – James 1-5
+12 – 1 Corinthians 1-3
+13 – 1 Corinthians 4-6
+14 – 1 Corinthians 7-9
+15 – 1 Corinthians 10-12
+16 – 1 Corinthians 13-16
+17 – 2 Corinthians 1-2
+18 – 2 Corinthians 3-4
+19 – 2 Corinthians 5-6
+20 – 2 Corinthians 7-8
+21 – 2 Corinthians 9-10
+22 – 2 Corinthians 11-13
+23 – Acts 1-2
+24 – Acts 3-5
+25 – Acts 6-7
+26 – Acts 8-10
+27 – Acts 11-13
+28 – Acts 14-16
+29 – Acts 17-20
+30 – Acts 21-24
+31 – Acts 25-28`],
+['September',`
+1 – Prov 1; Psalm 70; Rom 1
+2 – Prov 2; Rom 2
+3 – Prov 3; Psalm 111; Rom 3
+4 – Prov 4; Rom 4
+5 – Prov 5; Rom 5
+6 – Prov 6; Rom 6
+7 – Prov 7; Rom 7
+8 – Prov 8; Rom 8
+9 – Prov 9; Rom 9
+10 – Prov 10; Rom 10
+11 – Prov 11; Dan 1-2; Rom 11
+12 – Prov 12; Dan 3-4; Rom 12
+13 – Prov 13; Dan 5-6; Rom 13
+14 – Prov 14; Dan 7-8; Rom 14
+15 – Prov 15; Dan 9-10; Rom 15
+16 – Prov 16; Dan 11-12; Rom 16
+17 – Prov 17; 1 Corinthians 13
+18 – Prov 18; Luke 1
+19 – Prov 19; Luke 2
+20 – Prov 20; Luke 3
+21 – Prov 21; Luke 4
+22 – Prov 22; Luke 5
+23 – Prov 23; Luke 6
+24 – Prov 24; Ps 84-86; Luke 7
+25 – Prov 25; Ps 91; Luke 8
+26 – Prov 26; Luke 9
+27 – Prov 27; Luke 10
+28 – Prov 28; Luke 11
+29 – Prov 29; Luke 12
+30 – Prov 30; Luke 13`],
+['October',`
+1 – Psalm 126; Luke 14
+2 – Psalm 147; Luke 15
+3 – Psalm 138; Luke 16
+4 – Esther 1-2; Psalm 150; Luke 17
+5 – Esther 3-8; Luke 18
+6 – Esther 9-10; Luke 19
+7 – Proverbs 7; Luke 20
+8 – Psalm 131; Luke 21
+9 – Nehemiah 1-2; Ps 133; Luke 22
+10 – Nehemiah 3-4; Luke 23
+11 – Nehemiah 5-6; Ps 146; Lk 24
+12 – Nehemiah 7-8; Acts 1
+13 – Nehemiah 9-10; Acts 2
+14 – Nehemiah 11-12; Acts 3
+15 – Nehemiah 13; Mal 1, 2; Acts 4
+16 – Mal 3-4; Psalm 148; Acts 5
+17 – Job 1-2; Acts 6-7
+18 – Job 3-4; Acts 8-9
+19 – Job 5; Psalm 108; Acts 10-11
+20 – Job 6-8; Acts 12
+21 – Job 9-10; Acts 13-14
+22 – Job 11-12; Acts 15-16
+23 – Job 13-14; Acts 17-18
+24 – Job 15; Acts 19-20
+25 – Job 16; Acts 21-23
+26 – Job 17; Acts 24-26
+27 – Job 18; Psalm 114; Acts 27-28
+28 – Job 19; Mk 1-2
+29 – Job 20; Mk 3-4
+30 – Job 21; Mk 5-6
+31 – Job 22; Mk 7-8`],
+['November',`
+1 – Psalm 121; Mk 9-10
+2 – Job 23-24; Mk 11-12
+3 – Job 25; Mk 13-14
+4 – Job 26-27; Mk 15-16
+5 – Job 28-29; Galatians 1-2
+6 – Job 30; Psalm 120; Galatians 3-4
+7 – Job 31-32; Galatians 5-6
+8 – Job 33; 1 Corinthians 1-3
+9 – Job 34; 1 Corinthians 4-6
+10 – Job 35, 36; 1 Corinthians 7-8
+11 – Psalm 122; 1 Corinthians 9-11
+12 – Job 37-38; 1 Corinthians 12
+13 – Job 39-40; 1 Corinthians 13-14
+14 – Psalm 149; 1 Corinthians 15-16
+15 – Job 41-42; 2 Corinthians 1-2
+16 – 2 Corinthians 3-6
+17 – 2 Corinthians 7-10
+18 – Psalm 124; 2 Corinthians 11-13
+19 – Matthew 1-4; Hebrews 1-2
+20 – Matthew 5-7; Hebrews 3
+21 – Matthew 8-10; Hebrews 4-5
+22 – Matthew 11-13; Hebrews 6-7
+23 – Matthew 14-16; Hebrews 8-9
+24 – Matthew 17-19; Hebrews 10
+25 – Matthew 20-22; Hebrews 11
+26 – Matthew 23-25; Hebrews 12-13
+27 – Psalm 125; Matthew 26-27
+28 – Matthew 28; 1 Thess 1-3
+29 – 1 Thess 4-5; 2 Thess 1-3
+30 – Rom 1-4`],
+['December',`
+1 – Romans 5-8
+2 – Romans 9-12
+3 – Romans 13-16
+4 – Ephesians 1-4
+5 – Ephesians 5-6; Psalm 119
+6 – Philippians 1-4
+7 – Colossians 1-4
+8 – 1 Timothy 1-4
+9 – 1 Timothy 5-6; Titus 1-3
+10 – 2 Timothy 1-4
+11 – Philemon; Hebrews 1-4
+12 – Hebrews 5-8
+13 – Hebrews 9-11
+14 – Hebrews 12-13; Jude
+15 – Psalm 73 & 84
+16 – Psalm 90 & 91
+17 – Psalm 92 & 95
+18 – Psalm 100 & 103
+19 – Psalm 111 & 127
+20 – Psalm 117 & 130
+21 – Psalm 119
+22 – Psalm 2
+23 – Psalm 72; John 1
+24 – Psalm 111; Matthew 1-2
+25 – Psalm 96; Luke 1-2
+26 – Psalm 98 & 11; 2 & 3 John
+27 – Revelation 1-4; Colossians 1
+28 – Galatians 1-2; Colossians 2
+29 – Galatians 3; Colossians 3
+30 – Galatians 4; Colossians 4
+31 – Galatians 5-6; Psalm 23`]
+];
+function readFor(n){var j=PLAN[0][1].split('\n').map(function(l){return /^\s*(\d+)\s*[–-]\s*(.*)$/.exec(l)}).filter(function(q){return q&&+q[1]===n})[0];return j?j[2].trim():''}
+/* ===== END CONTENT ===== */
+
+var MN=['January'],DN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var ALL=[];WEEKS.forEach(function(w,i){w.days.forEach(function(d){ALL.push({n:d[0],q:d[1],r:d[2],p:d[3],w:i})})});
+var FIRST=ALL[0].n,LAST=ALL[ALL.length-1].n;
+function readBox(n){var r=readFor(n);return r?'<div class="read"><div class="eyebrow">Bible reading · Jan '+n+'</div><div class="b rd">'+r+'</div></div>':''}
+function dayName(n){return DN[new Date(YEAR,MONTH,n).getDay()]}
+function pick(){
+  var m=/^#jan-(\d+)$/.exec(location.hash);
+  var pv=/^#preview-jan-(\d+)$/.exec(location.hash);if(pv){var p=+pv[1];if(p>=FIRST&&p<=LAST)return{n:p,mode:'today'}}
+  if(m){var h=+m[1];if(h>=FIRST&&h<=LAST)return{n:h,mode:'pick'}}
+  var t=new Date(),y=t.getFullYear(),mo=t.getMonth(),d=t.getDate();
+  if(y===YEAR&&mo===MONTH&&d>=FIRST&&d<=LAST)return{n:d,mode:'today'};
+  if(y<YEAR||(y===YEAR&&mo<MONTH)||(y===YEAR&&mo===MONTH&&d<FIRST))return{n:FIRST,mode:'before'};
+  return{n:LAST,mode:'after'};
+}
+function render(){
+  var s=pick(),i=ALL.findIndex(function(x){return x.n===s.n}),x=ALL[i],w=WEEKS[x.w],note='';
+  if(s.mode==='before')note='Our time of prayer &amp; fasting begins '+dayName(FIRST)+', January '+FIRST+'. Here’s a preview of Day 1.';
+  if(s.mode==='after')note='This season of prayer &amp; fasting has wrapped up. Revisit any day in the plan below.';
+  if(s.mode==='pick')note='You’re viewing a different day. <a href="#" id="back" style="color:inherit;font-weight:700">Back to today</a>';
+  document.getElementById('today').innerHTML=
+   '<div class="eyebrow">Week '+(x.w+1)+' · '+w.title+'</div>'+
+   '<h1>Day '+(i+1)+'<br>'+dayName(x.n)+', Jan '+x.n+'</h1>'+
+   '<p class="tag">'+w.tag+'</p>'+(note?'<div class="banner">'+note+'</div>':'')+
+   '<blockquote>“'+x.q+'”</blockquote><div class="ref">'+x.r+'</div>'+
+   '<p class="prompt">'+x.p+'</p>'+readBox(x.n)+
+   '<div class="nav"><button id="prev"'+(i===0?' disabled':'')+'>← Previous</button><button id="next" class="solid"'+(i===ALL.length-1?' disabled':'')+'>Next day →</button></div>';
+  document.getElementById('prev').onclick=function(){go(ALL[i-1].n)};
+  document.getElementById('next').onclick=function(){go(ALL[i+1].n)};
+  var b=document.getElementById('back');if(b)b.onclick=function(e){e.preventDefault();history.replaceState(null,'',location.pathname+location.search);render();window.scrollTo(0,0)};
+  var h='';
+  WEEKS.forEach(function(wk,wi){
+    h+='<div class="wk"><div class="eyebrow">Week '+(wi+1)+'</div><h3>'+wk.title+'</h3><p class="intro">'+wk.intro+'</p>';
+    ALL.filter(function(d){return d.w===wi}).forEach(function(d){
+      h+='<button class="day'+(d.n===s.n?' on':'')+'" data-n="'+d.n+'"><span class="d">'+dayName(d.n)+', Jan '+d.n+(d.n===s.n?' · Viewing':'')+'</span><span class="q">“'+d.q+'”</span> <span class="r">'+d.r+'</span><span class="p">'+d.p+'</span></button>';
+    });
+    h+='</div>';
+  });
+  var c=document.getElementById('weeks');c.innerHTML=h;
+  c.querySelectorAll('.day').forEach(function(el){el.onclick=function(){go(+el.dataset.n)}});
+  var mo=document.getElementById('months');
+  if(!mo.innerHTML){mo.innerHTML=PLAN.map(function(m,mi){return '<details'+(mi===0?' open':'')+'><summary>'+m[0]+'</summary><ul class="ym">'+m[1].trim().split('\n').map(function(l){var q=/^\s*(\d+)\s*[–-]\s*(.*)$/.exec(l);return q?'<li data-m="'+mi+'" data-d="'+q[1]+'"><b>'+q[1]+'</b><span>'+q[2].trim()+'</span></li>':''}).join('')+'</ul></details>'}).join('')}
+  mo.querySelectorAll('li').forEach(function(li){li.classList.toggle('on',li.dataset.m==='0'&&+li.dataset.d===s.n)});
+}
+function go(n){location.hash='jan-'+n;window.scrollTo(0,0)}
+window.addEventListener('hashchange',render);
+render();
+</script>
+</body>
+</html>
